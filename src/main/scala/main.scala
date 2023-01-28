@@ -1,4 +1,3 @@
-
 import isSorted.isSorted
 
 object main {

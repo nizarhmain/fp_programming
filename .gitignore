@@ -24,4 +24,7 @@ target
 
 .scalafmt.conf
 
+.vscode
+.bloop
+
 # End of https://www.toptal.com/developers/gitignore/api/bloop
