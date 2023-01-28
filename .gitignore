@@ -1,0 +1,27 @@
+# Created by https://www.toptal.com/developers/gitignore/api/scala
+# Edit at https://www.toptal.com/developers/gitignore?templates=scala
+
+### Scala ###
+*.class
+*.log
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# End of https://www.toptal.com/developers/gitignore/api/scala
+
+# Created by https://www.toptal.com/developers/gitignore/api/bloop
+# Edit at https://www.toptal.com/developers/gitignore?templates=bloop
+
+### Bloop ###
+.bsp
+.idea/
+
+.metals
+project
+target
+
+
+.scalafmt.conf
+
+# End of https://www.toptal.com/developers/gitignore/api/bloop
