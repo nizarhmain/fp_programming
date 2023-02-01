@@ -68,6 +68,20 @@ object chapter3 {
     }
   }
 
+  // Exercise 3.11
+  def sum[A](l: List[Int]): Int = {
+    l.foldLeft(0)(_ + _)
+  }
 
+  def product[A](l: List[Int]): Int = {
+    l.foldLeft(l.head)(_ * _)
+  }
+
+  // Exercise 3.12
+  def reverse[A](l: List[Int]): List[Int] = {
+    // List[Int]() is the object that we will start with and in our case, it's b
+    // we will then append the B element to our A list
+    l.foldLeft(List[Int]())((a, b) => List(b) ++ a)
+  }
 
 }

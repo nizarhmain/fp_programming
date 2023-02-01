@@ -25,4 +25,10 @@ class patternMatchingExperimentTest extends org.scalatest.TestSuite {
   assert(dropWhile(List(10, 11, 12), ((a: Int) => a < 11)) == List(11, 12))
 
   assert(init(List(1, 2, 3, 4)) == List(1, 2, 3))
+
+  assert(sum(List(1, 2, 3, 4)) == 10)
+  assert(product(List(1, 2, 3, 4)) == 24)
+
+  // Exercise 3.12
+  assert(reverse(List(1,2,3)) == List(3,2,1))
 }
