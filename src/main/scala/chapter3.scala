@@ -16,4 +16,14 @@ object chapter3 {
       case _                     => 101
     }
   }
+
+  // Exercise 3.2
+  // remove first element of a list
+  def tail[A](l:List[A]): List[A] = {
+    l match {
+      case h::t => t
+      case Nil => Nil
+    }
+  }
+
 }
