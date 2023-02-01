@@ -30,5 +30,9 @@ class patternMatchingExperimentTest extends org.scalatest.TestSuite {
   assert(product(List(1, 2, 3, 4)) == 24)
 
   // Exercise 3.12
-  assert(reverse(List(1,2,3)) == List(3,2,1))
+  assert(reverse(List(1, 2, 3)) == List(3, 2, 1))
+
+// Exercise 3.16
+  assert(incrementIntsInList(List(1, 2, 3)) == List(2, 3, 4))
+
 }

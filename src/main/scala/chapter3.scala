@@ -84,4 +84,14 @@ object chapter3 {
     l.foldLeft(List[Int]())((a, b) => List(b) ++ a)
   }
 
+  // Exercise 3.16
+  def incrementIntsInList[A](l: List[Int]): List[Int] = {
+    l.map(_+1)
+  }
+
+  // Exercise 3.17
+  def transformDoubleIntoString[A](l: List[Double]): List[String] = {
+    l.map(_.toString())
+  }
+
 }
