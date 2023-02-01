@@ -58,4 +58,16 @@ object chapter3 {
     }
   }
 
+  // Exercise 3.6
+  def init[A](l: List[A]): List[A] = {
+    l match {
+      // every step extract, the Head of the list and append it to the result
+      // repeat until the length is equal to 1
+      case h :: t => if (t.length == 1) List(h) else List(h) ++ init(t)
+      case Nil    => Nil
+    }
+  }
+
+
+
 }

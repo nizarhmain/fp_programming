@@ -23,4 +23,6 @@ class patternMatchingExperimentTest extends org.scalatest.TestSuite {
 
   // Exercise 3.5
   assert(dropWhile(List(10, 11, 12), ((a: Int) => a < 11)) == List(11, 12))
+
+  assert(init(List(1, 2, 3, 4)) == List(1, 2, 3))
 }
