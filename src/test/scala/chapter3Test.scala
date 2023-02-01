@@ -35,4 +35,10 @@ class patternMatchingExperimentTest extends org.scalatest.TestSuite {
 // Exercise 3.16
   assert(incrementIntsInList(List(1, 2, 3)) == List(2, 3, 4))
 
+  assert(transformDoubleIntoString(List(null, 2, 3)) == None)
+
+  for {
+    settings <- transformDoubleIntoString(List(1, 2, 3))
+  } yield assert(settings == List("1", "2", "3"))
+
 }

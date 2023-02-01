@@ -86,12 +86,13 @@ object chapter3 {
 
   // Exercise 3.16
   def incrementIntsInList[A](l: List[Int]): List[Int] = {
-    l.map(_+1)
+    l.map(_ + 1)
   }
 
   // Exercise 3.17
-  def transformDoubleIntoString[A](l: List[Double]): List[String] = {
-    l.map(_.toString())
+  // With Optionable return values
+  def transformDoubleIntoString[A](l: List[A]): Option[List[String]] = {
+    try Some(l.map((x: A) => x.toString())) catch {case e: Exception => None}
   }
 
 }
