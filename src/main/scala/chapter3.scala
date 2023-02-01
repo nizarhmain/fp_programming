@@ -1,7 +1,6 @@
-/** Exercise 3.1
-  */
 object chapter3 {
 
+  // Exercise 3.1
   def patterTest[A](l: List[Int]): Int = {
     l match {
       // we are taping inside the constructor here
@@ -13,8 +12,8 @@ object chapter3 {
       case x :: 2 :: 4 :: _      => 30
       case Nil                   => 42
       case x :: y :: 3 :: 4 :: _ => x + y
-      case h :: t => h + t.sum
-      case _ => 101
+      case h :: t                => h + t.sum
+      case _                     => 101
     }
   }
 }
